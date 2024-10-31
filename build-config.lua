@@ -1,8 +1,8 @@
 #!/usr/bin/env texlua
 
-module = "lipsum"
+module = "redrum"
 
-testfiledir   = "testfiles-" .. ...
+-- testfiledir   = "testfiles-" .. ...
 
 stdengine     = checkengines[1] or checkengines[2]
 

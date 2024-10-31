@@ -1,13 +1,17 @@
-# lipsum
+# redrum
 
-150 paragraphs of Lorem ipsum dummy text for LaTeX.
+150 paragraphs of All work and no play dummy text for LaTeX.
+
+This is a fork of [lipsum](https://github.com/PhelypeOleinik/lipsum) by
+Patrick Happel <patrick.happel@rub.de> and Phelype Oleinik
+<phelype.oleinik@latex-project.org>.
 
 ## Install
 
 In most cases it is not requried to install this package manually, it is
 included in the major tex-distributions. If, for some reason, you want install
-it manually, run lipsum.ins through (pdf)latex to generate the style file. To
-generate the documentation, run lispum.dtx through a latex program that
+it manually, run redrum.ins through (pdf)latex to generate the style file. To
+generate the documentation, run redrum.dtx through a latex program that
 understands utf8 input (XeLaTeX or lualatex).
 
 ## Usage
@@ -18,9 +22,9 @@ See the documentation.
 
 ```latex
 \documentclass{article}
-\usepackage{lipsum}
+\usepackage{redrum}
 
 \begin{document}
-\lipsum
+\redrum
 \end {document}
 ```

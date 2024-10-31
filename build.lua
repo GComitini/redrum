@@ -1,5 +1,5 @@
 #!/usr/bin/env texlua
-module     = "lipsum"
+module     = "redrum"
 pkgversion = "2.7"
 pkgdate    = os.date("%Y-%m-%d")
 
@@ -12,7 +12,7 @@ checkconfigs =
   }
 
 -- Tagging:
-tagfiles = { "lipsum.dtx", "CHANGELOG.md" }
+tagfiles = { "redrum.dtx", "CHANGELOG.md" }
 function update_tag(file, content, tagname, tagdate)
   if tagname == nil then
     tagname = pkgversion
@@ -24,11 +24,11 @@ function update_tag(file, content, tagname, tagdate)
     end
   end
   tagstring(
-    "\\def\\lipsumversion{%d+%.%d+%w?}",
-    "\\def\\lipsumversion{" .. tagname .. "}")
+    "\\def\\redrumversion{%d+%.%d+%w?}",
+    "\\def\\redrumversion{" .. tagname .. "}")
   tagstring(
-    "\\def\\lipsumdate{%d+-%d+-%d+}",
-    "\\def\\lipsumdate{" .. tagdate .. "}")
+    "\\def\\redrumdate{%d+-%d+-%d+}",
+    "\\def\\redrumdate{" .. tagdate .. "}")
   tagstring(
     "## %[Unreleased%]",
     "## [" .. tagname .. "]")
