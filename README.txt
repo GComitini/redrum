@@ -1,9 +1,11 @@
 redrum
 
-Access to 150 paragraphs of ``All work and no play'' dummy text.
+Access to 150 paragraphs of ``All work and no play'' dummy text, as
+featured in Stanley Kubrick's movie ``The Shining''.
 
-This is a fork of lipsum (https://github.com/PhelypeOleinik/lipsum) by
-Patrick Happel (patrick.happel@rub.de) and Phelype Oleinik
+This is a humorous (but hopefully still useful) fork of lipsum
+(https://github.com/PhelypeOleinik/lipsum) by Patrick Happel
+(patrick.happel@rub.de) and Phelype Oleinik
 (phelype.oleinik@latex-project.org).
 
 Currently maintained by Giorgio Comitini

@@ -2,7 +2,8 @@
 %
 % This file is part of the package redrum for use with LaTeX2e.
 %
-% Function: Access to 150 paragraphs of the well known All work and no play dummy text.
+% Function: Access to 150 paragraphs of the well known "All work and
+% no play" dummy text, as featured in Stanley Kubrick's movie "The Shining".
 %
 % This program may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
@@ -15,8 +16,8 @@
 % Please send error reports and suggestions for improvements to
 %    https://github.com/GComitini/redrum
 %
-\def\redrumversion{2.7}
-\def\redrumdate{2021-09-20}
+\def\redrumversion{1.0}
+\def\redrumdate{2024-10-31}
 %<*driver>
 \ProvidesFile{redrum.dtx}%
   [\redrumdate\space v\redrumversion\space
@@ -97,62 +98,38 @@
 \@ifundefined{NewDocumentCommand}
   {\RequirePackage{xparse}}{}
 \ProvidesExplPackage {redrum} {\redrumdate} {\redrumversion}
-  {150 paragraphs of All work and no play dummy text}
+  {150 paragraphs of ``All work and no play'' dummy text from Stanley Kubrick's movie ``The Shining''}
 %</package>
 % \fi
 %
 % \title{\pkg{redrum}}
-% \subtitle{Access to 150 paragraphs of All work and no play dummy
-% text\thanks{Version: \redrumversion.}^^A
+% \subtitle{Access to 150 paragraphs of ``All work and no play'' dummy
+% text from Stanley Kubrick's movie ``The Shining''\thanks{Version: \redrumversion.}^^A
 % \thanks{This is a fork of \pkg{lipsum}, written by Patrick Happel
 %  (\href{mailto:patrick.happel@rub.de}{patrick.happel\meta{at}rub.de})
 %  and maintained by Phelype Oleinik (\href{mailto:phelype.oleinik@latex-project.org}
-%  {phelype.oleinik\meta{at}latex-project.org}) since March 2021.}}
-% \author{Giorgio Comitini\thanks{Original authors: Patrick Happel
+%  {phelype.oleinik\meta{at}latex-project.org}).}}
+% \author{Giorgio Comitini\thanks{Original docs authors: Patrick Happel
 %  (\href{mailto:patrick.happel@rub.de}{patrick.happel\meta{at}rub.de}) and
 %  Phelype Oleinik (\href{mailto:phelype.oleinik@latex-project.org}
 %  {phelype.oleinik\meta{at}latex-project.org}).}}
 % \date{\today}
 % \RecordChanges
-% \changes{v1.0}{2004/05/15}{First \pkg{lipsum} release}
-% \changes{v1.1}{2011/02/08}{Added support for typesetting dummy text without
-% paragraphs in between.}
-% \changes{v1.2}{2011/04/14}{Bug fix (thanks to  Florent Chervet and Ulrike
-% Fischer for reporting).}
-% \changes{v1.3}{2014/07/19}{Introduced some improvements and provided some
-% new macros (thanks to tex.stackexchange user egreg).}
-% \changes{v1.3a}{2017/08/10}{Fixed a type in the documentation (thanks to
-% Vincent Belaïche). This version never made its way on CTAN due to some
-% version naming conflicts. Since the change here was only in the
-% documentation, I first didn't want it to be 1.3a and later had no time to
-% update it properly.}
-% \changes{v2.0}{2018/11/07}{Added the possibility to fetch a number of sentences from the
-% lipsum paragraphs (thanks to Frank Mittelbach).}
-% \changes{v2.0}{2018/11/07}{Rewritten code in \pkg{expl3} syntax.}
-% \changes{v2.1}{2018/11/18}{Changed defaults, now nothing is typeset at the
-% end of any list.}
-% \changes{v2.1a}{2018/11/24}{Added forgotten ins-file to CTAN. This requires
-% a new version number.}
-% \changes{v2.2}{2018/12/25}{replaced \cs{tex_par:D} by \cs{par} to avoid
-% incompatibilities with \LaTeX2e's |list|-environment. Thanks to Karl Hagen
-% for reporting. See \url{ttps://github.com/patta42/lipsum/issues/12}.}
-% \changes{v2.3}{2021/03/03}{Remove dependency on an \pkg{xparse} internal
-%   macro.  \pkg{lipsum}'s new home at
-%   \url{https://github.com/PhelypeOleinik/lipsum}}
-% \changes{v2.4}{2021/06/03}{Major changes documented in \texttt{CHANGELOG.md}.}
-% \changes{v2.7}{2024/10/29}{Forked \pkg{redrum} from \pkg{lipsum}}
+% \changes{v1.0}{2024/10/31}{Forked \pkg{redrum} from \pkg{lipsum}}
 %
 % \maketitle{\pkg{redrum} is a \LaTeX{} package that produces dummy text
 % to be used in test documents or examples. The paragraphs are taken from
-% Stanley Kubrick's \emph{The Shining} and from \url{https://www.lipsum.com/} with
-% permission (thanks to James Wilson for this work). Furthermore, the following people
-% contributed to \pkg{lipsum} (and so to \pkg{redrum} too) by suggesting improvements,
-% correcting bugs or finding typos in the documentation: Florent Chervet, Ulrike Fischer,
-% Vincent Belaïche, Enrico Gregorio, Frank Mittelbach, Karl Hagen.
+% Stanley Kubrick's movie \emph{The Shining}. The package itself is meant
+% to make you have a good laugh while still being useful for your very
+% serious -- and at times quite stressful -- work. Let's face it, we all
+% kinda understand what Jack Torrance was going through when writing that
+% abstract or those conclusions that just don't seem to materialize on
+% paper.
 %
-% Please, file bug reports, typos in the documentation or
-% feature requests as an issue on
-% \url{https://github.com/GComitini/redrum/issues}.}
+% Please, file bug reports, typos in the documentation or feature requests
+% as an issue on \url{https://github.com/GComitini/redrum/issues}. If you
+% would like to see more fun texts in \pkg{redrum} don't hesitate to
+% propose them!}
 %
 % \begin{documentation}
 %
@@ -168,109 +145,23 @@
 % argument allows to specify the range of the paragraphs. For example,
 % \verb|\redrum[4-57]| typesets the paragraphs 4 to 57 and accordingly,
 % \verb|\redrum[23]| typesets the 23\textsuperscript{rd} paragraph\footnote{
-% While the paragraphs of the \emph{All work and no play} dummy text are
-% all the same, this is not so for the other dummy texts.}.
+% The paragraphs of the \emph{All work and no play} text have a variable
+% number of same-sentences so as to still be useful as dummy text.}.
 % Using \cs{redrum} without its optional argument typesets the
 % paragraphs 1--7 of \redr
 %
-% As of version 2.0, \cs{redrum} has a second optional argument which allows
-% selecting a range of sentences from the paragraphs\footnote{Again, the
-% sentences of the \emph{All work and no play} dummy text are all the same,
-% but not those of the other dummy texts.}. To get the sentences
-% four to eight from paragraphs three to nine, use |\redrum[3-9][4-8]|.
-% The sentences are counted from the first sentence of the first selected
-% paragraph.  In the previous example, sentence number~1 is the first
-% sentence of paragraph number~3.
+% \cs{redrum} has a second optional argument which allows selecting a range
+% of sentences from the paragraphs. To get the sentences four to eight from
+% paragraphs three to nine, use |\redrum[3-9][4-8]|. The sentences are counted
+% from the first sentence of the first selected paragraph.  In the previous
+% example, sentence number~1 is the first sentence of paragraph number~3.
 %
-% \subsection{Foreword to Version 2.7}
+% \subsection{Foreword to Version 1.0}
 % \label{sec:foreword2.7}
 %
-% \pkg{redrum} was forked from \pkg{lipsum} at version~2.7. It added the
-% well-known \emph{All work and no play} text and set it as the default dummy
-% text provided by the package. \pkg{lipsum}'s dummy texts distributed with
-% version~2.7 are still available in the package and can be accessed by their
-% old names \secref{sec:other-texts}.
-%
-% \subsection{Foreword to Version 2.4}
-% \label{sec:foreword2.4}
-%
-% Version~2.4 received another almost complete rewrite focussing on the
-% internal structure of the package, and some minor fixes (see the
-% \texttt{CHANGELOG} for more details).
-%
-% The package now ships with a new dummy text, in pseudo-Czech, provided
-% by Ondřej Macek.  To select this text, load the package with
-% |\usepackage[text=lipsum-cs]{redrum}| or use
-% \cs{setredrum}|{text=lipsum-cs}|.
-%
-% The dummy texts now have a language metadata which is used to select
-% the proper hyphenation patterns to the dummy text.  For compatibility
-% with old documents you can load \pkg{redrum} with
-% |\usepackage[auto-lang=false]{redrum}| or, as above, use
-% \cs{setredrum}|{auto-lang=false}|.
-%
-% Finally, as demonstrated above, a new macro \cs{setredrum} was added
-% to change package options anywhere in the document, so you may change,
-% for example, the dummy text printed by \cs{redrum} on-the-fly by using
-% \cs{setredrum}|{text=|\meta{name}|}| \secref{sec:other-texts} for a
-% list of available texts). In general, a key-val syntax was added which
-% will eventually replace the command-based syntax for package settings.
-% For the time being, both versions are available.
-%
-% \subsection{Foreword to version 2.2}
-%
-% As of version 2.2, \pkg{redrum} provides a simple interface to define other
-% texts to be used as output of the \cs{redrum}-family of commands. This was
-% heavily inspired by an issue raised by
-% \emph{svenper} on
-% github\footnote{\url{https://github.com/patta42/lipsum/issues/13}}. However,
-% the implementation of this interface might not match the needs of everyone
-% who wants to provide a dummy text in another language. Comments and
-% suggestions on this are very welcome.
-%
-% \subsection{Foreword to Version 2.0}\label{sec:foreword2.0}
-%
-% Version 2.0 of \pkg{redrum} is a complete (well, nearly complete)  rewrite
-% of the code in \pkg{expl3}
-% syntax. I have never used \pkg{expl3} before and thus the code might be too
-% complicated, might use wrong or badly chosen data types or weird function
-% names. I am happy to receive comments on this.
-%
-% Due the complete rewrite, some internals have changed which might impact
-% older documents. Since, however, I guess that \pkg{redrum} is not used for
-% documents with true, important, content, I think potentially breaking up old
-% documents is not a big issue here. The changes are:
-% \begin{itemize}
-% \item The package option \opt{nopar} now uses a \cs{space} as terminator,
-% instead of \cs{relax}.
-% \item The commands \cs{UnpackRedrum} and \cs{UnpackRedrum*} are no longer
-% available. The effect of \cs{UnpackRedrum} now is default for
-% \cs{unpackredrum} (or \cs{unpackredrum*}, depending on the package
-% option). The effect of \cs{UnpackRedrum*} can be mimicked by using
-% \cs{RedrumProtect}\Arg{command}, as in the following example:
-% \begin{explbox}
-% \begin{verbatim}
-% \documentclass{article}
-% \usepackage{redrum,xcolor}
-% \newcommand\foo{}
-% \SetRedrumParListItemEnd{\RedrumProtect{\foo}}
-%
-% \begin{document}
-% \renewcommand\foo{\color{.!75!red}}
-%   { \redrumexp }
-%
-% \newcounter{mycnt}\setcounter{mycnt}{1}
-% \renewcommand\foo{%
-%   (\themycnt)\stepcounter{mycnt}}
-% \redrumexp
-% \end{document}
-% \end{verbatim}
-% \end{explbox}
-% \item The internal macros \cs{redr@i}, \cs{redr@ii}, \cs{redr@iii}, \ldots,
-%   \cs{redr@cl} are no longer available.
-% \item All other internal macros (with one exception) are no longer available,
-%   too.
-% \end{itemize}
+% \pkg{redrum} was forked from \pkg{lipsum} at version~2.7. It replaced the
+% old latin-like texts with the well-known \emph{All work and no play} and
+% set it as the default dummy text provided by the package.
 %
 % Please note that the documentation only refers to the \emph{All work and no play}
 % text, even if \pkg{redrum} also supports other texts.
@@ -279,10 +170,11 @@
 %
 % \pkg{redrum} was intended to quickly provide a way to fill a page or two to
 % analyze the page
-% layout\footnote{\url{https://groups.google.com/d/topic/de.comp.text.tex/oPeLOjkrLfk}}.
-% While it has grown in the meanwhile and now provides some more advanced
-% features, it still is only intended to quickly provide text. If you want more
-% features, look at the \pkg{blindtext}-package.
+% layout\footnote{\url{https://groups.google.com/d/topic/de.comp.text.tex/oPeLOjkrLfk}}
+% while humorously citing Stanley Kubrick's ``The Shining''. While it provides some
+% more advanced features, it still is only intended to quickly provide text. If you
+% want more serious dummy text, look at the \pkg{lipsum} package. If you want more
+% features, look at the \pkg{blindtext} package.
 %
 % \subsection{Package Options}
 % \label{sec:pkg-opt}
@@ -308,16 +200,14 @@
 %   for \cs{redrum*}.
 % \item[text]={name}(redrum)
 %   Selects the dummy text \meta{name} that is used by \cs{redrum} and
-%   \cs{unpackredrum} \secref{sec:other-texts}.
+%   \cs{unpackredrum}. At this time, only the ``All work and no play''
+%   text is provided \secref{sec:other-texts}.
 % \item[language]={lang}(latin)
 %   Sets the language to be used by \cs{redrum} to typeset the currently
-%   active dummy text \secref{sec:hyphenation}.  Changing the dummy text
-%   with the \opt{text} option will also change the current
-%   \opt{language}.
+%   active dummy text \secref{sec:hyphenation}.
 % \item[auto-lang]={boolean}(true)
-%   Turns on/off automatic language switching.  This changed since
-%   version 2.3, in which this option (didn't exist thus) was |false| by
-%   default.  See section~\ref{sec:hyphenation} for more details.
+%   Turns on/off automatic language switching. See
+%   section~\ref{sec:hyphenation} for more details.
 % \item[default-range]={p_i\texttt{-}p_f}(1-7)
 %   Sets the default range of paragraphs produced by \cs{redrum} when no
 %   optional argument is provided.  The value to \opt{default-range}
@@ -413,7 +303,7 @@
 %
 % \subsection{Other commands}
 %
-% These commands exist for necessity or backwards comatibility, and
+% These commands exist for necessity or backwards compatibility, and
 % should normally not be needed in user documents.
 %
 % \begin{function}{\SetRedrumText}
@@ -481,11 +371,10 @@
 % \subsection{Hyphenation patterns}
 % \label{sec:hyphenation}
 %
-% Since version~2.4, the command \cs{redrum} automatically changes the
-% hyphenation patterns when typesetting a dummy text, so that
-% line-breaking looks better \secref{sec:foreword2.4}.  This feature is
-% on by default, so if you need the old behaviour you have to explicitly
-% disable automatic language switching with
+% The command \cs{redrum} automatically changes the hyphenation patterns
+% when typesetting a dummy text, so that line-breaking looks better.
+% This feature is on by default, so if you don't want it you have to
+% explicitly disable automatic language switching with
 % |\setredrum{auto-lang=false}|.
 %
 % The language is defined individually for each dummy text
@@ -508,8 +397,7 @@
 % optional argument, then a range of paragraphs is output, along with
 % some ``separators'' (in the lack of a better name) between paragraphs,
 % around each paragraph, and before and after the whole output.
-% A schematic (very colorful, because I couldn't find a better visual)
-% representation of the output is:
+% A schematic (very colorful) representation of the output is:
 %
 % \begin{function}{
 %     par-before,
@@ -586,94 +474,13 @@
 % collected from. In the same way, if paragraph-mode is being used, only
 % |par-...| tokens are inserted.
 %
-% \subsubsection{Deprecated command-based syntax}
-%
-% Older versions of \pkg{redrum} (from 2.0 to 2.3) provided~10 CamelCase
-% commands for changing the separators, but the syntax was rather
-% cumbersome to use, so the keyval syntax presented thus far was
-% introduced in the hopes of making things a bit easier.  The old
-% commands will still exist for some time in the package, but with a
-% deprecation warning.  Changing to the keyval syntax is advised, so
-% here is a correspondence table between the old and new syntaxes:
-%
-% \begin{center}
-%   \ttfamily \makeatletter
-%   \definecolor{a}{HTML}{E0211A}\colorlet{a}{a!60!black}
-%   \definecolor{b}{HTML}{5970D5}\colorlet{b}{b!60!black}
-%   \protected@edef\x#1#2{\string\SetRedrum
-%     {\color{a}#1}List{\color{b}#2}}%
-%   \def\y#1#2{{\color{a}#1}-{\color{b}#2}}
-%   \begin{tabular}{@{}ll@{}}
-%     \toprule
-%       \textrm{Old command}      & \textrm{New key name} \\
-%     \midrule
-%       \x{Par}{Start}              & \y{par}{before}      \\
-%       \x{Par}{ItemStart}          & \y{par}{begin}       \\
-%       \x{Par}{ItemSeparator}      & \y{par}{sep}         \\
-%       \x{Par}{ItemEnd}            & \y{par}{end}         \\
-%       \x{Par}{End}                & \y{par}{after}       \\
-%       \x{Sentence}{Start}         & \y{sentence}{before} \\
-%       \x{Sentence}{ItemStart}     & \y{sentence}{begin}  \\
-%       \x{Sentence}{ItemSeparator} & \y{sentence}{sep}    \\
-%       \x{Sentence}{ItemEnd}       & \y{sentence}{end}    \\
-%       \x{Sentence}{End}           & \y{sentence}{after}  \\
-%     \bottomrule
-%   \end{tabular}
-% \end{center}
-%
-% Additionally, the command-based interface provided shortcuts
-% |\SetRedrum|\meta{Thing}|List|(|Item|)|Surrounders|, which are
-% equivalent to just using the commands
-% |\SetRedrum|\meta{Thing}|List|(|Item|)|Start| then |\...End|.  These
-% don't provide any functionality, other than requiring a little less
-% typing, so no key-val alternative was implemented.
-% The |\...|\meta{Thing}|...Surrounders| commands should be replaced by
-% \meta{thing}|-before| and \meta{thing}|-after|, and the
-% |\...|\meta{Thing}|...ItemSurrounders| commands should be replaced by
-% \meta{thing}|-begin| and \meta{thing}|-end|, as in the correspondence
-% table below:
-%
-% \begin{center}
-%   \ttfamily \makeatletter
-%   \definecolor{a}{HTML}{E0211A}\colorlet{a}{a!60!black}
-%   \definecolor{b}{HTML}{5970D5}\colorlet{b}{b!60!black}
-%   \protected@edef\x#1#2{\string\SetRedrum
-%     {\color{a}#1}List{\color{b}#2}Surrounders%^^A
-%      \kern .5\tabcolsep \xleaders\hbox{\vrule
-%          width 2pt height \dimexpr .5ex+.4pt\relax depth -.5ex
-%          \kern 2pt}%
-%        \hskip 0pt plus 1filll \kern -.5\tabcolsep
-%      \raise.5ex\rlap{\kern.5\tabcolsep
-%        \vrule width \tabcolsep height 0.4pt depth 0pt
-%        \kern-0.5\tabcolsep
-%        \smash{\vrule depth \normalbaselineskip width 0.4pt
-%          \raise-\normalbaselineskip
-%            \hbox{\vrule width .5\tabcolsep height 0.4pt depth 0pt}}}}%
-%   \def\y#1#2{{\color{a}#1}-{\color{b}#2}}
-%   \begin{tabular}{@{}ll@{}}
-%     \toprule
-%       \textrm{Old command} & \textrm{New key names} \\
-%     \midrule
-%       \x{Par}{}          & \y{par}{}before      \\
-%                          & \y{par}{}after       \\
-%       \x{Par}{Item}      & \y{par}{begin}       \\
-%                          & \y{par}{end}         \\
-%       \x{Sentence}{}     & \y{sentence}{}before \\
-%                          & \y{sentence}{}after  \\
-%       \x{Sentence}{Item} & \y{sentence}{begin}  \\
-%                          & \y{sentence}{end}    \\
-%     \bottomrule
-%   \end{tabular}
-% \end{center}
-%
 % \section{Loading and defining dummy texts}
 % \label{sec:other-texts}
 %
-% Starting with \pkg{redrum} v2.2, a simple interface is provided to
-% define and load other texts for the output of \cs{redrum} and friends.
-% This interface can, for example, be used to implement dummy texts in
-% different languages without re-coding the logic implemented by
-% \pkg{redrum}.
+% A simple interface is provided to define and load other texts for the
+% output of \cs{redrum} and friends. This interface can, for example,
+% be used to implement dummy texts in different languages without
+% re-coding the logic implemented by \pkg{redrum}.
 %
 % \begin{function}{\NewRedrumPar}
 %   \begin{syntax}
@@ -689,9 +496,8 @@
 %   the second paragraph and so on.
 % \end{function}
 % \footnotetext{To avoid name clashes with files using general languages
-% as names, I chose to introduce the |.ltd.tex| file ending. I did not
-% find a file with this ending in my |texmf|-tree, so I guess it is
-% safe.}
+% as names, the \pkg{lipsum} authors chose to introduce the |.ltd.tex|
+% file ending.}
 %
 % \begin{function}{\SetRedrumLanguage}
 %   \begin{syntax}
@@ -716,22 +522,9 @@
 %     File (\texttt{.ltd.tex}) & Language & Source & Description \\
 %   \midrule
 %     \texttt{redrum} & Latin
-%       & Stanley Kubrick
-%         & Contains the standard \emph{All work and no play} dummy text,
+%       & Stanley Kubrick's ``The Shining''
+%         & Contains the \emph{All work and no play} dummy text, as
 %           featured in the movie \emph{The Shining} (default). \\
-%     \texttt{lipsum} & Latin
-%       & James Wilson
-%         & Contains the standard \emph{Lorem ipsum} dummy text,
-%           obtained from \url{https://www.redrum.com}. \\
-%     \texttt{lipsum} & Latin
-%       & GH user \href{https://github.com/svenper}{svenper}
-%         & Contains the speech by Cicero which inspired the
-%           \emph{Lorem ipsum\ldots} dummy text. \\
-%     \texttt{lipsum-cs} & Czech
-%       & Ondřej Macek
-%         & Lorem ipsum dummy text in the Czech language, obtained from
-%           Petr Staníček's website:
-%             \url{https://www.wellstyled.com/tools/dummy-cz}. \\
 %   \bottomrule
 % \end{tabularx}
 % \end{wide}
@@ -745,8 +538,9 @@
 % preamble of the document and thus the contents of the file underlie
 % the respective restrictions.
 %
-% Should you want a new dummy text, create an issue in the GitHub
-% repository\footnote{\url{https://github.com/GComitini/redrum}}
+% Should you want a new dummy text, \textbf{especially if humorous and
+% thus not so suitable for inclusion in \pkg{lipsum}}, create an issue
+% in the GitHub repository\footnote{\url{https://github.com/GComitini/redrum}}
 % with the source for the dummy text.
 %
 % Should you prefer to distribute the dummy text as a separate package,
@@ -1083,8 +877,7 @@
 % \subsection{User- and developer-level commands}
 %
 % \begin{macro}[int]{\RedrumPar}
-%   Macro to typeset a single paragraph of \redr\ Was not officially
-%   available in version prior to 2.0.
+%   Macro to typeset a single paragraph of \redr
 %   \begin{arguments}
 %     \item Number of the paragraph to typeset.
 %   \end{arguments}
@@ -1511,7 +1304,7 @@
     nopar .default:n = true  ,
 %    \end{macrocode}
 %   \opt{auto-lang} sets \cs{l_@@_autolang_bool}.  It is initially
-%   |true|, changing the default behaviour from previous versions.
+%   |true|.
 %    \begin{macrocode}
     auto-lang .bool_set:N = \l_@@_autolang_bool ,
     auto-lang .initial:n = true ,

@@ -1,6 +1,6 @@
 #!/usr/bin/env texlua
 module     = "redrum"
-pkgversion = "2.7"
+pkgversion = "1.0"
 pkgdate    = os.date("%Y-%m-%d")
 
 dofile("config-pdftex.lua")
